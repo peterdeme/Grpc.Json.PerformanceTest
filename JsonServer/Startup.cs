@@ -1,0 +1,20 @@
+﻿using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Logging;
+
+namespace JsonServer
+{
+    public class Startup 
+    {        
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
+        {
+            app.UseMvc();
+        }
+
+        public void ConfigureServices(IServiceCollection services)
+        {
+            services.AddMvc();
+        }
+    }
+}

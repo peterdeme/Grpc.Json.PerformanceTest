@@ -1,0 +1,16 @@
+﻿syntax = "proto3";
+
+service HugePayloadService
+{
+	rpc SendHugePayload (HugeRequest) returns (HugeResponse);
+}
+
+message HugeRequest {
+	repeated string StringList = 1;
+	repeated int32 IntList= 2;
+}
+
+message HugeResponse {
+	repeated string StringList = 1;
+	repeated int32 IntList= 2;
+}

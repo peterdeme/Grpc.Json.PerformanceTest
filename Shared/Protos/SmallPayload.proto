@@ -1,0 +1,14 @@
+﻿syntax = "proto3";
+
+service SmallPayloadService
+{
+	rpc SendSmallPayload (SmallRequest) returns (SmallResponse);
+}
+
+message SmallRequest {
+	string Message = 1;
+}
+
+message SmallResponse {
+	string Message = 1;
+}
