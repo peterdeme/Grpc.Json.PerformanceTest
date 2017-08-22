@@ -23,9 +23,9 @@ Encoding: UTF8
 
 Formatting: not indented
 
-**SmallRequest**: 26 chars -> **26 bytes**
+[SmallRequest](https://github.com/peterdeme/Grpc.Json.PerformanceTest/blob/master/Shared/SmallRequest.cs): 26 chars -> **26 bytes**
 
-**HugeRequest**: 4,828 characters -> **4,828 bytes**
+[HugeRequest](https://github.com/peterdeme/Grpc.Json.PerformanceTest/blob/master/Shared/HugeRequest.cs): 4,828 characters -> **4,828 bytes**
 
 ## GRPC Result
 
