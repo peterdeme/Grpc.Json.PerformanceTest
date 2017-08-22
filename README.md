@@ -18,6 +18,15 @@ Benchmarked with [BenchmarkDotNet](https://github.com/dotnet/BenchmarkDotNet) li
 
 **Json**: .NET Core 2.0 console app.
 
+### Json request size
+Encoding: UTF8
+
+Formatting: not indented
+
+**SmallRequest**: 26 chars -> **26 bytes**
+
+**HugeRequest**: 4,828 characters -> **4,828 bytes**
+
 ## GRPC Result
 
 ``` ini
@@ -54,6 +63,17 @@ Frequency=2338332 Hz, Resolution=427.6553 ns, Timer=TSC
  |------------------------- |---------:|---------:|---------:|---------:|
  | SendSmallRequestToServer | 613.5 us | 20.30 us | 56.26 us | 590.5 us |
  |  SendHugeRequestToServer | 964.1 us | 20.12 us | 39.71 us | 950.1 us |
+
+## Diagrams
+*The smaller the better. Y scale is nanosec*
+<p align="center">
+  <img src="http://i.imgur.com/q1S0LO1.png" alt="Small request"/>
+</p>
+
+*The smaller the better. Y scale is nanosec*
+<p align="center">
+  <img src="http://i.imgur.com/hdtT2K5.png" alt="Huge request"/>
+</p>
 
 ## How to run the tests
 Open 2 separate command window and run the servers.
